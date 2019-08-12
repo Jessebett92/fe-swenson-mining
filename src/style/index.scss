@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
+
+  .components-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+}
