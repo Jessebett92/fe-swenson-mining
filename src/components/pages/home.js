@@ -1,15 +1,13 @@
 import React from "react";
-import NavBar from "../navigation/nav-bar";
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div className="home">
-        <NavBar />
-        <h1>Home</h1>
-      </div>
-    );
-  }
-}
+import ProductFrame from "../products/pro-frame";
+
+const Home = () => {
+  return (
+    <div className="home">
+      <ProductFrame />
+    </div>
+  );
+};
 
 export default Home;

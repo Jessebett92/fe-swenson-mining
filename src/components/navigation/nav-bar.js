@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div className="nav-wrapper">
       <div className="nav-spacer">
         <div className="logo-wrapper">
-          <div>// Logo goes here</div>
+          <Link to="/">// Logo goes here</Link>
         </div>
       </div>
       <div className="nav-links">
