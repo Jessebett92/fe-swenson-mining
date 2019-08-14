@@ -1,7 +1,6 @@
 import React from "react";
 
 import ProductDisplay from "./product-display";
-import { userInfo } from "os";
 
 class ProductFrame extends React.Component {
   constructor() {

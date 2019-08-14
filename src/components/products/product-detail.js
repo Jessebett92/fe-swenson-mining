@@ -8,7 +8,13 @@ class ProductDetail extends React.Component {
     this.state = {
       productInfo: ""
     };
+    this.addThisItem = this.addThisItem.bind(this);
   }
+
+  addThisItem = event => {
+    event.preventDefault();
+    this.props.addToCart(this.state.productInfo.id);
+  };
 
   componentWillMount() {
     axios
@@ -33,7 +39,7 @@ class ProductDetail extends React.Component {
         </div>
         <div className="detail-price">
           <h3>${price}</h3>
-          <button>Add to Cart</button>
+          <button onClick={this.addThisItem}>Add to Cart</button>
         </div>
         <div className="detail-description">
           <p>{description}</p>

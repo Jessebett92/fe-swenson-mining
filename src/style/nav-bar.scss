@@ -3,7 +3,7 @@
   grid-template-columns: 2fr 2fr 1fr;
   grid-gap: 10px;
   width: 100%;
-  height: 6em;
+  height: 8em;
   background-color: #aa9739;
 
   .nav-spacer {
@@ -17,8 +17,21 @@
       width: 15em;
       height: 100%;
       background-color: white;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px 0px black;
 
-      border: 1px solid;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+
+      img {
+        size: cover;
+      }
     }
   }
 

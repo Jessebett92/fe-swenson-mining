@@ -6,7 +6,9 @@ const NavBar = () => {
     <div className="nav-wrapper">
       <div className="nav-spacer">
         <div className="logo-wrapper">
-          <Link to="/">// Logo goes here</Link>
+          <Link to="/">
+            <img src="https://www.freelogoservices.com/api/main/images/1j+ojl1KOMkX9WyofBe43D6kiPSIrx9Nmx7NwXs1M3EMoAJtlSYogfBj9vU6" />
+          </Link>
         </div>
       </div>
       <div className="nav-links">
