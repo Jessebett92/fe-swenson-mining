@@ -14,7 +14,7 @@ class ProductFrame extends React.Component {
   }
 
   getProductsInfo() {
-    fetch("http://localhost:5000/nuggets")
+    fetch("https://jb-goldmining-be.herokuapp.com/nuggets")
       .then(response => response.json())
       .then(data => {
         this.setState({

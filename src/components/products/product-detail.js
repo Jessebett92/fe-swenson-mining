@@ -18,7 +18,11 @@ class ProductDetail extends React.Component {
 
   componentWillMount() {
     axios
-      .get(`http://localhost:5000/nugget/${this.props.match.params.slug}`)
+      .get(
+        `https://jb-goldmining-be.herokuapp.com/nugget/${
+          this.props.match.params.slug
+        }`
+      )
       .then(response => {
         this.setState({
           productInfo: response.data

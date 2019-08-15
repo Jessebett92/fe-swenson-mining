@@ -39,7 +39,7 @@ class Cart extends React.Component {
   getCartItems = () => {
     this.props.cart.forEach(item => {
       axios
-        .get(`http://localhost:5000/nugget/${item}`)
+        .get(`https://jb-goldmining-be.herokuapp.com/nugget/${item}`)
         .then(response => {
           this.setState({
             products: this.state.products.concat(response.data),
