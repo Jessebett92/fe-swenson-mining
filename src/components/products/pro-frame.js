@@ -33,6 +33,7 @@ class ProductFrame extends React.Component {
           key={item.id}
           id={item.id}
           image={item.image}
+          price={item.price}
           title={item.title}
           description={item.description}
           jewltype={item.jewltype}

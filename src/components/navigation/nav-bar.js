@@ -1,7 +1,10 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = () => {
+const NavBar = props => {
   return (
     <div className="nav-wrapper">
       <div className="nav-spacer">
@@ -25,8 +28,17 @@ const NavBar = () => {
         </div>
       </div>
       <div className="shopping">
-        <NavLink to="/login">Login</NavLink>
-        <NavLink to="/cart">Your Cart</NavLink>
+        <div className="login">
+          <NavLink to="/login">
+            <FontAwesomeIcon icon={faSignInAlt} />
+          </NavLink>
+        </div>
+        <div className={props.cart.length > 0 ? "added-cart" : "cart"}>
+          <p>{props.cart.length}</p>
+          <NavLink to="/cart">
+            <FontAwesomeIcon icon={faCartPlus} />
+          </NavLink>
+        </div>
       </div>
     </div>
   );

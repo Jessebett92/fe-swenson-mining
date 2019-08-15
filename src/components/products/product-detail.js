@@ -6,7 +6,7 @@ class ProductDetail extends React.Component {
     super(props);
 
     this.state = {
-      productInfo: ""
+      productInfo: {}
     };
     this.addThisItem = this.addThisItem.bind(this);
   }

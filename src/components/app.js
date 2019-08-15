@@ -7,6 +7,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Cart from "./cart-management/cart";
 import ProductDetail from "./products/product-detail";
+import Footer from "./navigation/footer";
 import NoMatch from "./pages/no-match";
 
 export default class App extends Component {
@@ -20,6 +21,12 @@ export default class App extends Component {
     this.addToCart = this.addToCart.bind(this);
   }
 
+  handleRemoveFromCart = index => {
+    const cart = Object.assign([], this.state.cart);
+    cart.splice(index, 1);
+    this.setState({ cart: cart });
+  };
+
   addToCart = item => {
     this.setState({
       cart: this.state.cart.concat(item)
@@ -31,14 +38,20 @@ export default class App extends Component {
       <div className="app">
         <Router>
           <div className="components-wrapper">
-            <NavBar />
+            <NavBar cart={this.state.cart} />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <Route
                 path="/cart"
-                render={props => <Cart {...props} cart={this.state.cart} />}
+                render={props => (
+                  <Cart
+                    {...props}
+                    cart={this.state.cart}
+                    handleRemoveFromCart={this.handleRemoveFromCart}
+                  />
+                )}
               />
               <Route
                 exact
@@ -49,6 +62,7 @@ export default class App extends Component {
               />
               <Route component={NoMatch} />
             </Switch>
+            <Footer />
           </div>
         </Router>
       </div>

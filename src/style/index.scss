@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
   height: 100vh;
+  font-family: "Lato", sans-serif;
+  color: #433e49;
 }
 
 .app {
@@ -12,6 +13,9 @@ body {
   height: 100vh;
 
   .components-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
   }

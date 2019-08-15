@@ -10,6 +10,7 @@ const ProductDisplay = props => {
       <div className="image-wrapper">
         <img src={props.image} />
       </div>
+      <div className="display-price">${props.price}</div>
       <div className="product-view">
         <Link to={`/product/${props.slug}`}>View Product</Link>
       </div>
