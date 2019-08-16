@@ -1,0 +1,55 @@
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #433e49;
+
+  .about-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    height: 900px;
+    width: 800px;
+    margin: 2em;
+    background-color: #f3e8eb;
+    color: #433e49;
+
+    .about-grid-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 22px;
+      font-style: italic;
+    }
+
+    .dad-image {
+      background: url(../../static/assets/images/dad.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+    }
+
+    .pump-image {
+      background: url(../../static//assets/images/pump.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+    }
+
+    .washplant-image {
+      background: url(../../static/assets/images/washplant.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+    }
+
+    .gold-image {
+      background: url(../../static/assets/images/gold.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+    }
+  }
+}
