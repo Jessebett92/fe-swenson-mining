@@ -5,6 +5,7 @@ import NavBar from "./navigation/nav-bar";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Login from "./auth/login";
 import Cart from "./cart-management/cart";
 import ProductDetail from "./products/product-detail";
 import Footer from "./navigation/footer";
@@ -53,6 +54,7 @@ export default class App extends Component {
                   />
                 )}
               />
+              <Route path="/login" component={Login} />
               <Route
                 exact
                 path="/product/:slug"
