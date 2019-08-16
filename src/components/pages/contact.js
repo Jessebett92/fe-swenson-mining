@@ -1,10 +1,11 @@
 import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookSquare } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-solid-svg-icons";
-import { faTwitterSquare } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
